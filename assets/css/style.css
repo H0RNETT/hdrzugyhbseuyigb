@@ -95,9 +95,8 @@ hr {
 
 /* Header */
 .header {
-    padding-top: 10px;
+    padding-top: 30px;
     width: 100%;
-    padding-top: 10px;
 
     position: absolute;
     top: 0;
@@ -107,9 +106,9 @@ hr {
 }
 
 .header.fixed{
-    padding: 10px 0;
     background-color: #f38181;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
     position: fixed;
     top: 0;
     left: 0;
@@ -187,8 +186,8 @@ header.active{
 /* Nav toggle */
 
 .nav-toggle{
-    padding: 10px 0;
     width: 30px;
+    padding: 10px 0;
     display: none;
 
     font-size: 0;
@@ -196,44 +195,48 @@ header.active{
 
     border: 0;
     background: none;
-
     cursor: pointer;
 
     position: absolute;
+    top: 24px;
     right: 24px;
-    top: 24 px;
     z-index: 1;
-
 }
 
 .nav-toggle_item{
     display: block;
-    
     width: 100%;
     height: 3px;
+
     background-color: #fff;
+
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
+
     transition: background .2s linear;
     
 }
 
-.nav-toggle .active .nav-toggle_item {
+.nav-toggle.active .nav-toggle_item {
     background: none;
 }
 
-
-
 .nav-toggle_item:before,
-.nav-toggle_item::after{
+.nav-toggle_item:after{
     content: "";
     width: 100%;
     height: 3px;
+
     background-color: #fff;
+
     position: absolute;
     left: 0;
     z-index: 1;
+
     transition: transform .2s linear;
 }
 
@@ -241,20 +244,18 @@ header.active{
     top: -8px;
 }
 
-.nav-toggle_item::after{
+.nav-toggle_item:after{
     bottom: -8px;
 }
 
 .nav-toggle.active .nav-toggle_item:before{
     transform-origin: left top;
-    transform: rotate(45deg)
-    translateX(2px);
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
 }
 
-.nav-toggle.active .nav-toggle_item:active{
+.nav-toggle.active .nav-toggle_item:after{
     transform-origin: left bottom;
-    transform: rotate(-45deg)
-    translateX(-3px);
+    transform: rotate(-45deg) translate3d(0px, -3px, 0);
 }
 
 
@@ -1329,7 +1330,7 @@ header.active{
     /* Clients */
 
     .clients{
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -1389,6 +1390,7 @@ header.active{
     .nav{
        display: none;
        width: 100%;
+
        position: absolute;
        top: 100%;
        left: 0;
@@ -1398,7 +1400,7 @@ header.active{
     .nav_link{
         display: block;
         margin: 0;
-        padding: 20px 20px;
+        padding: 8px 20px;
     }
 
     .nav-toggle{
@@ -1596,7 +1598,7 @@ header.active{
 
  /* logos */
 
-     .loogos{
+     .logos{
          flex-wrap: wrap;
          justify-content: center;
      }
@@ -1623,8 +1625,8 @@ header.active{
     }
 
     .clients_item{
-        text-align: center;
         padding-left: 0;
+        text-align: center;
     }
 
     .clients_text:before{

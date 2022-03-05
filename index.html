@@ -13,21 +13,26 @@
 
     
 
-<header class="header">
+<header class="header" id="header"> <!-- id для js -->
     <div class="container">
         <div class="header_inner">
             <div class="header_logo">MoGo</div>
 
             <nav class="nav">
-                <a class="nav_link active" href="#">card</a>
+                <a class="nav_link" href="#">card</a>
                 <a class="nav_link" href="#">Service</a>
                 <a class="nav_link" href="#">Blog</a>
                 <a class="nav_link" href="#">Work</a>
                 <a class="nav_link" href="#">Contact</a>
-                
+                <a class="nav_link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a class="nav_link" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
             </nav>
 
-            <button type="button" class="nav-toggle active">
+            <button class="nav-toggle" type="button">
                 <span class="nav-toggle_item">Menu</span>
             </button>
         </div>
@@ -36,7 +41,7 @@
 
 
 <div class="page">
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro_inner">
                 <h2 class="intro_suptitle">Creative Template</h2>
@@ -606,33 +611,31 @@
 
                     </div>
                     <div class="blog_item">
-                        <div class="blog_header"> <!-- для того что красиво спозицонировать картинку-->
+                        <div class="blog_header"> <!-- Для того чтобы красиво спозиционировать картинку -->
                             <a href="#">
-                                <img class="blog_photo" src="assets/images/blog/3.jpg" alt="">
+                                <img class="blog__photo" src="assets/images/blog/3.jpg" alt="">
                             </a>
                             <div class="blog_date">
-                                <div class="blog_date-day">15</div>Jan
+                                <div class="blog_date-day">15</div>
+                                Jan
                             </div>
                         </div>
-
                         <div class="blog_content">
                             <div class="blog_title">
                                 <a href="#">Lorem ipsum dolor sit amet</a>
                             </div>
-                            <div class="blog_text">
-                                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-
-                            <div class="blog_footer">
-                                <div class="blog-stat">
-                                    <span class="blog-stat_item">
-                                        <i class="fa-light fa-eye"></i>542</span>
-                                    <span class="blog-stat_item"><i class="fa-solid fa-comments"></i>17</span>
-                                </div>
-                            </div>
-
+                            <div class="blog_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                         </div>
-
+                        <div class="blog_footer">
+                            <div class="blog-stat">
+                                <span class="blog-stat_item">
+                                    <i class="far fa-eye"></i> 542
+                                </span>
+                                <span class="blog-stat_item">
+                                    <i class="far fa-comment-dots"></i> 17
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>  <!-- /.blog -->
 
@@ -643,7 +646,7 @@
             <div class="container">
                 <div class="map"> 
                     <h2 class="map_title">
-                    <div> <i class="fa-solid fa-location-dot"></i></div>
+                        <div><i class="fas fa-map-marker-alt"></i></div>
                         <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A8%D0%BF%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+52,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8471744,27.5655457,18.33z/data=!4m5!3m4!1s0x46dbd1bb3daa7e53:0x4d3347542e3fe0ac!8m2!3d53.8470283!4d27.5647828?hl=ru-RU" target="_blank">Open Map</a>
                     </h2>
                 </div>
@@ -761,6 +764,13 @@
         </footer>
 
 </div> <!-- ./page -->    
+
+
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+
+<script src="assets/js/app.js"></script> 
 
 </body>
 </html>
