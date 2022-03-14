@@ -7,6 +7,8 @@ body {
     color: #333;
 }
 
+
+
 *,
 *:before,
 *:after {
@@ -103,7 +105,10 @@ hr {
     left: 0;
     right: 0;
     z-index: 1000;
+    transition: .3s;
 }
+
+
 
 .header.fixed{
     background-color: #f38181;
@@ -114,7 +119,9 @@ hr {
     left: 0;
     right: 0;
 
-    transform: translate3d(0, 0, 0,); /* Чтобы менюшка не дёргалась при скролле */
+    transform: translate3d(0, 0, 0,);  /* Чтобы менюшка не дёргалась при скролле */
+     transition: .3s;
+    
    
 }
 
@@ -152,6 +159,7 @@ header.active{
 
     transition: color .1s linear;
 }
+
 
 .nav_link:after {
     content: "";
